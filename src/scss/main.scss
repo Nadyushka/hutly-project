@@ -1,0 +1,51 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/intro";
+@import "./components/benefit";
+@import "./components/reviews";
+
+// тестовые стили, удалите их
+
+.page__body {
+  background-color: var(--bg-main);
+  display: flex;
+  justify-content: center;
+}
+
+.site-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  padding: 25px 50px;
+  background-color: var(--bg-main);
+  border-radius: 26px;
+  color: var(--font-light);
+  font-size: 1.125rem;
+  display: inline-block;
+}
+
+.info_title {
+  font-size: 1.25rem;
+  font-family: inherit;
+  line-height: 1.875rem;
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+}
+
+.info_amount {
+  font-size: 4.438rem;
+  font-family: inherit;
+  line-height: 5.25rem;
+  margin: 0;
+  font-weight: bold;
+}
