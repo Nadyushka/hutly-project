@@ -29,6 +29,18 @@
         .nav_link {
           color: var(--font-light);
           text-decoration: none;
+          transition: 0.5s all;
+
+          &:focus {
+          }
+
+          @include hover {
+            font-weight: 800;
+          }
+
+          &:active {
+
+          }
         }
 
         .nav_link-active {
@@ -56,6 +68,23 @@
       font-weight: bold;
       border-radius: 64px 128px 128px 64px;
       font-family: var(--font-family);
+      cursor: pointer;
+      transition: 0.5s all;
+
+      &:focus {
+
+      }
+
+      @include hover {
+        font-size: 1.4rem;
+        padding: 31px 33px 32px 27px;
+      }
+
+      &:active {
+        background-color: var(--font-dark);
+        color: var(--btn-light);
+        border: 1px solid var(--btn-light);
+      }
     }
 
   }

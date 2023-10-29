@@ -3,6 +3,11 @@
   background-color: var(--bg-section-light);
   padding: 80px 88px;
   margin-bottom: 80px;
+  transition: 0.5s all;
+
+  @media (max-width: 1200px) {
+    padding: 40px 48px;
+  }
 
   .reviews-container{
     display: flex;
@@ -11,10 +16,14 @@
 
     .reviews-title {
       flex-grow: 2;
-      flex-basis: calc(66.33% - 26px);
-      font-size: 8.25rem;
-      color: var(--font-dark);
-      line-height: 102%;
+      flex-basis: calc(66.66% - 26px);
+      transition: 0.5s all;
+
+      @media (max-width: 1500px) {
+        font-size: 6rem;
+        flex-grow: 1;
+        flex-basis: calc(50% - 26px);
+      }
     }
 
     .reviews-item {
@@ -26,6 +35,11 @@
       color: var(--font-dark);
       font-family: var(--font-family);
       position: relative;
+      transition: 0.5s all;
+
+      @media (max-width: 1500px) {
+        flex-basis: calc(50% - 26px);
+      }
 
       .reviews-text {
         font-size: 1.5rem;

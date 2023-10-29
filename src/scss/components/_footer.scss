@@ -1,0 +1,132 @@
+.footer {
+  padding: 126px 65px 100px 100px;
+  border-radius: 80px;
+  background-color: var(--bg-section-dark);
+  margin-bottom: 80px;
+  transition: 0.5s all;
+
+  @media (max-width: 1600px) {
+    padding: 63px 35px 50px 50px;
+  }
+
+  .footer-top {
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .footer-title {
+      color: var(--font-light);
+      font-size: 10rem;
+      line-height: 10.93rem;
+      max-width: 980px;
+      letter-spacing: -2%;
+      transition: 0.5s all;
+
+      @media (max-width: 1440px) {
+        font-size: 7rem;
+        line-height: 8rem;
+        max-width: 800px;
+      }
+    }
+
+    .footer-btn_container {
+      flex: 0 0 auto;
+
+      .footer-btn {
+        padding: 155px 88px;
+        background-color: var(--bg-dark);
+        color: var(--font-light);
+        border-radius: 76px;
+        font-size: 1.687rem;
+        line-height: 2.125rem;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:focus {
+
+        }
+
+        @include hover {
+          transform: scale(1.1);
+        }
+
+        &:active {
+          background-color: var(--btn-light);
+          color: var(--bg-dark);
+          border: 1px solid var(--bg-dark);
+        }
+
+      }
+
+    }
+  }
+
+  .footer-text {
+    font-size: 2.68rem;
+    color: var(--font-light);
+    max-width: 614px;
+    line-height: 3.25rem;
+    margin-bottom: 220px;
+  }
+
+  .footer_menu {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 90px;
+    border-radius: 80px;
+    background-color: var(--bg-dark);
+
+    .footer_logo {
+      width: 96px;
+      height: 40px;
+    }
+
+    .footer_nav {
+
+      .footer_list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        gap: 50px;
+
+        .footer_item {
+          list-style-type: none;
+          position: relative;
+          cursor: pointer;
+
+
+          a {
+            color: var(--font-light);
+            text-decoration: none;
+
+            &:focus {
+            }
+
+            @include hover {
+              font-weight: 800;
+            }
+
+            &:active {
+              &::after {
+                content: '';
+                background-color: var(--font-light);
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                position: absolute;
+                left: 50%;
+                top: -50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+

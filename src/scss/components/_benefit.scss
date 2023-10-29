@@ -3,10 +3,19 @@
   gap: 46px;
   margin-bottom: 79px;
 
+  @media (max-width: 1250px) {
+    gap: 30px;
+  }
+
   .benefit-img {
     height: 100%;
     width: 447px;
     object-fit: contain;
+    transition: 0.5s all;
+
+    @media (max-width: 1250px) {
+      width: 30%;
+    }
   }
 
   .info {
@@ -15,22 +24,63 @@
     font-family: inherit;
     background-color: var(--bg-section-light);
     border-radius: 80px;
+    transition: 0.5s all;
+
+    @media (max-width: 1799px) {
+      padding: 80px 177px 200px 197px;
+    }
+
+    @media (max-width: 1550px) {
+      padding: 80px 100px 150px 117px;
+    }
+
+    @media (max-width: 1350px) {
+      padding: 80px 100px 100px 117px;
+    }
+
+    @media (max-width: 1250px) {
+      padding: 60px 70px;
+    }
 
     .info_title {
       text-align: right;
+      transition: 0.5s all;
+
+      @media (max-width: 1275px) {
+        font-size: 1.15rem;
+      }
     }
 
     .info_amount {
       text-align: right;
       margin-bottom: 62px;
+      transition: 0.5s all;
+      transition: 0.5s all;
+
+      @media (max-width: 1275px) {
+        font-size: 2.75rem;
+        margin-bottom: 20px;
+        line-height: 3.25rem;
+      }
     }
 
     .info_main-text {
-      font-size: 4.75rem;
+      margin: 0;
+      font-size: 4.5rem;
       line-height: 102%;
       font-weight: bold;
       margin-bottom: 49px;
       max-width: 876px;
+      transition: 0.5s all;
+
+      @media (max-width: 1440px) {
+        font-size: 4rem;
+      }
+
+      @media (max-width: 1150px) {
+        font-size: 2.5rem;
+        margin-bottom: 29px;
+      }
     }
 
     .info_additional-text {
@@ -39,6 +89,11 @@
       font-weight: bold;
       margin-bottom: 49px;
       max-width: 876px;
+
+      @media (max-width: 1150px) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
     }
   }
 }
